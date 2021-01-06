@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*Una variable es un contenedor de informacion*/
 /*
 para utilizar el preprocesador sass en win nos ubicamos en cmd en la carpeta donde está el archivo sass y escribimos el siguiente código:
 
@@ -46,6 +45,20 @@ p {
 .caja .info .author {
   font-size: 15px;
   color: orange;
+}
+
+/* Mixins: es un conjunto de instrucciones que se ejecutan cuando este es llamado
+realizan una tarea especifica y este puede recibir parametros*/
+.caja {
+  border: 10px solid red;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.listado {
+  border: 5px solid green;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #457813;
 }
 
 h1 {
