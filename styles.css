@@ -1,8 +1,5 @@
+@charset "UTF-8";
 /*Una variable es un contenedor de informacion*/
-$fuente-tipica: sans-serif, Helvetica, Arial;
-$color-fondo: #ccc;
-$color-letra: red;
-$color-secundario: rgb(122, 20, 20);
 /*
 para utilizar el preprocesador sass en win nos ubicamos en cmd en la carpeta donde está el archivo sass y escribimos el siguiente código:
 
@@ -16,16 +13,17 @@ styles.css -> es el archive resultante de la compilación.
 Al ejecutarlo y mientras esté abierto sass estará pendiente de cualquier cambio que se haga en estilos.scss generando el css resultante en el archivo styles.css
 
 */
-
-body{
-  background-color: $color-fondo;
+body {
+  background-color: #ccc;
 }
 
-h1{
-  color: $color-letra;
-  font-family: $fuente-tipica;
+h1 {
+  color: red;
+  font-family: sans-serif, Helvetica, Arial;
 }
 
-p{
-  color: $color-secundario;
+p {
+  color: #7a1414;
 }
+
+/*# sourceMappingURL=styles.css.map */
