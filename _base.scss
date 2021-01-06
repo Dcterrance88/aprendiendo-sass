@@ -19,7 +19,7 @@ Al ejecutarlo y mientras esté abierto sass estará pendiente de cualquier cambi
 
 //Uso de variables
 body{
-  background-color: $color-fondo;
+  //background-color: $color-fondo;
 }
 
 h1{
@@ -68,4 +68,29 @@ realizan una tarea especifica y este puede recibir parametros*/
 }
 .listado{
   @include crearBordes(green, 5px, #457813);
+}
+//Herencia
+%alert-normal {
+  border: 1px solid gray;
+  background-color: #eee;
+  color: gray;
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.alert{
+  @extend %alert-normal;
+}
+
+.alert-danger{
+  @extend %alert-normal;
+  color: red;
+  border-color: red;
+}
+
+.alert-succes{
+  @extend %alert-normal;
+  color: green;
+  border-color: green;
 }
